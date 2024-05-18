@@ -1,0 +1,255 @@
+            /* Add your CSS styles here */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                overflow-y: hidden;
+            }
+
+            #sidebar {
+                width: 20%;
+                background-color: #111;
+                color: #fff;
+                float: left;
+                height: 100vh;
+                padding: 10px;
+                transition: 0.5s ease;
+            }
+            #sidebar ul li a {
+                width: 100%;
+                display: block;
+                padding: 15px 20px;
+                text-align: left;
+                transition: background-color 0.3s ease;
+            }
+            #sidebar ul li a:hover {
+                background-color: #333;
+            }
+            #sidebar ul li a i {
+                margin-right: 10px;
+            }
+
+            #content {
+                width: 80%;
+                float: left;
+                padding: 20px;
+                height:90vh;
+                overflow-y:scroll !important;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+
+            ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+            }
+
+            h1,
+            h2 {
+                color: #333;
+            }
+
+            .data-container {
+                /* border: 1px solid #ccc; */
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 20px;
+                margin-bottom: 20px;
+                /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+                transition: box-shadow 0.3s ease;
+            }
+            --webkit-scrollbar{
+                display:none;
+            }
+            --webkit-scrollbar:hover{
+                display:block;
+            }
+            .data-container:hover {
+                /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+            }
+
+            .data-container h2 {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .data-container p {
+                font-size: 16px;
+                color: #666;
+            }
+
+            .header {
+                width: 100%;
+                height: auto;
+                background-color: #528aaf;
+                padding: 20px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+            }
+            .header a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+            .header .left a {
+                font-weight: 900;
+                font-size: 20px;
+            }
+            .main-counter {
+                width: 100%;
+                height: 100%;
+                width: 100%;
+                height: 50vh;
+            }
+            .counter {
+                width: 45%;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                padding: 20px;
+                float: left;
+                text-align: center;
+                border-radius: 10px;
+                margin: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.3s ease;
+            }
+
+            .counter:hover {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .counter p {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .counter #count {
+                font-family: sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            @media screen and (max-width: 768px) {
+                .counter {
+                    width: 100%;
+                }
+                .main-counter {
+                    height: 50vh;
+                }
+                #sidebar {
+                    display: none;
+                    width: 100%;
+                }
+                #content {
+                    width: 100%;
+                }
+                .toggler {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #528aaf;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    position: fixed;
+                    top: 10px;
+                    left: 10px;
+                    z-index: 999;
+                    border-radius: 50%;
+                }
+
+                .toggler:before {
+                    content: "\2630";
+                    font-size: 24px;
+                    transition: 0.5s ease;
+                }
+                #small-none {
+                    display: none;
+                }
+                #sidebar ul li a {
+                    display: block;
+                    padding: 20px;
+                    margin: 10px;
+                    border-bottom: 2px solid white;
+                    text-align: center;
+                }
+                .data-container{
+                    height: 500px;
+                }
+            }
+            .products-data-container {
+                /* Styles for the data container */
+                border: 1px solid #ccc;
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+
+                background-color: #f9f9f9;
+            }
+            .serice-name {
+                margin-top: 10px;
+            }
+            .products-form {
+                /* Styles for the form */
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .products-input,
+            .products-textarea,
+            .products-file-input {
+                /* Styles for input fields and textarea */
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 0;
+                margin-top: 10px;
+            }
+            .products-form label {
+                margin-bottom: 10px;
+            }
+            .products-textarea {
+                /* Additional styles for textarea */
+                resize: vertical;
+            }
+
+            .products-file-input {
+                /* Additional styles for file input */
+                background-color: #fff;
+            }
+
+            .products-submit-button {
+                /* Styles for submit button */
+                padding: 15px 20px;
+                background-color: #528aaf;
+                color: #fff;
+                border: none;
+                border-radius: 0px;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+
+            .products-submit-button:hover {
+                /* Hover effect for submit button */
+                background-color: #407298;
+            }

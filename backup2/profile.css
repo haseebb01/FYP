@@ -1,0 +1,50 @@
+/* Custom CSS for User Profile Management */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for better readability on smaller screens */
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-title {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      padding: 0 10px; /* Adjusted padding for smaller screens */
+  }
+}

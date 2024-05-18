@@ -1,0 +1,209 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffafa;
+}
+
+.navbar div {
+  color: #f1f1f1;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.navbar img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header styles */
+.header {
+  background-color: #678ebe;
+  box-shadow: 0 1px 2px rgba(255, 254, 254, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-right: 30px;
+  list-style: none;
+}
+.navbar-menu li a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.logo img {
+  height: 50px;
+}
+
+.button {
+  background-color: #6a9dd1;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #3a536e;
+}
+
+
+/* Hero section styles */
+.hero {
+  background-image: url(blue.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 150px 0;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #475a63;
+}
+
+/* About section styles */
+.about {
+  background-color: #4eacd1;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.about-description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+/* Services section styles */
+.services {
+  background-color: #0c1857;
+  padding: 100px 0;
+  text-align: center;
+  margin-trim: 5;
+}
+
+.services-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff9f9;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.service {
+  background-color: #495d77;
+  border: 1px solid #0e0d0d;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,1) 
+}
+
+/* Style the footer */
+footer {
+  background-color: #528aaf;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Center align the content in the footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Style the footer logo */
+.footer-logo img {
+  width: 100px; /* Adjust the logo size as needed */
+}
+
+/* Style the footer information */
+.footer-info p {
+  margin: 5px 0;
+}
+.footer-info img {
+  width: 150px;
+  height: 150px;
+
+}
+
+/* Media query to adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}

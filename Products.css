@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffafa;
+}
+
+.services {
+  background-image: url(assets/images/Aboutpg.png);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff9f9;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.service {
+  background-color: #495d77;
+  border: 1px solid #0e0d0d;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,1,0,0.2);
+}
+
+.container {
+  color: #ffffff;
+  background-color: #0c075a;
+  margin-top: 5px;
+  padding: 15px;
+}
+
+.form-group {
+  max-width: 400px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.form-control {
+  color: #000;
+}
+
+#productDropdown {
+  height: 35px;
+}
+
+.btn-custom {
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: #131370;
+  color: #ffffff;
+}
+
+#productDropdown option {
+  text-align: center;
+  color: #000000;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

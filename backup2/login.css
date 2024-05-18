@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(assets/images/Aboutpg.png);
+}
+
+.login-box, .register-box {
+    width: 400px;
+    background-color: rgba(235, 224, 224, 0.297);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(82, 74, 74, 0.5);
+}
+a{
+    color: white !important; 
+}
+.btn-login {
+    color: #06005c;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #09084b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #4c5756;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .login-box, .register-box {
+        width: 90%;
+        max-width: 400px;
+    }
+}

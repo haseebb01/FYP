@@ -1,0 +1,40 @@
+/* Custom CSS for Multi-Step Form */
+.services {
+  background-color: #13355a;
+  padding: 100px 0; /* Added padding for better display */
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 800px; /* Added maximum width for better display on larger screens */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto; /* Center the container horizontally */
+}
+
+.nav-tabs {
+  margin-bottom: 20px;
+}
+
+.tab-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Optional: Adjust button styles */
+.btn-primary {
+  background-color: #13355a;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      margin-top: 30px;
+  }
+}
