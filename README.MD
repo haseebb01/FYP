@@ -1,4 +1,4 @@
-# Gas On Go 🚚💨
+# Gas on the go
 
 This project is a web application developed using HTML5, CSS3, Bootstrap 5, PHP, and MySQL. The purpose of this application is to provide a platform for clients to order gas cylinders for commercial and residential purposes. Clients can specify the location for delivery, select the desired quantity of gas cylinders in kilograms, and track the status of their orders. Additionally, an admin panel is provided to manage the website.
 
